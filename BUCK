@@ -12,7 +12,7 @@ cxx_library(
   ], exclude = glob([
     'fizz/**/test/**/*.cpp',
     'fizz/tool/**/*.cpp',
-    'fizz/extensions/**/*.cpp',
+    'fizz/extensions/javacrypto/**/*.cpp',
     'fizz/protocol/Brotli*.cpp',
   ])),
   licenses = [
