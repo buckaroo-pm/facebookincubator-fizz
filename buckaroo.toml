@@ -1,3 +1,5 @@
+targets = [ "//:fizz" ]
+
 [[dependency]]
 package = "github.com/buckaroo-pm/facebook-folly"
 version = "*"
