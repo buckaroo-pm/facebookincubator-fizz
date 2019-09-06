@@ -1,1 +1,8 @@
 out/
+
+.buckd
+buck-out
+buckaroo
+buckaroo_macros.bzl
+.buckconfig.local
+.buckconfig.d

@@ -1,0 +1,18 @@
+[project]
+  ignore = .git
+
+[parser]
+  default_build_file_syntax = SKYLARK
+
+[cxx]
+  should_remap_host_platform = true
+  ; untracked_headers = error
+  untracked_headers_whitelist = /usr/include/.*, /usr/local/include/.*, /usr/lib/.*
+
+[cxx#linux-x86_64]
+  should_remap_host_platform = true
+  cxxppflags = -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_MEMRCHR=1
+
+[cxx#macosx-x86_64]
+  should_remap_host_platform = true
+  cxxflags = -std=c++14 -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_MEMRCHR=1
