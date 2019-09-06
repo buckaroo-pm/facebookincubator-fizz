@@ -1,4 +1,4 @@
-manifest = "a6379f2c05731750d2ffa500dc489ccc14b4d917bdc35bd18959e7e41c975a3c"
+manifest = "ea0646409b0d775955ac2feb77d87eab9693e7c984be8608d1864d2bc9e2646f"
 
 [[dependency]]
 package = "github.com/buckaroo-pm/facebook-folly"
@@ -7,6 +7,10 @@ target = "//:folly"
 [[dependency]]
 package = "github.com/buckaroo-pm/facebook-zstd"
 target = "//lib:zstd"
+
+[[dependency]]
+package = "github.com/buckaroo-pm/jedisct1-libsodium"
+target = "//:sodium"
 
 [lock."github.com/buckaroo-pm/boost-algorithm"]
 versions = [ "branch=master" ]
@@ -279,6 +283,10 @@ revision = "a558deb76563a26f05251f69f1458ed8281cf513"
 [lock."github.com/buckaroo-pm/icu4c"]
 versions = [ "branch=master" ]
 revision = "2bfbe715e2c1cd41e301b6a67fd50ae54273a504"
+
+[lock."github.com/buckaroo-pm/jedisct1-libsodium"]
+versions = [ "branch=master" ]
+revision = "5b8be63498f1ecea0a573e3e1b4326301451a80c"
 
 [lock."github.com/buckaroo-pm/pkg-config-event"]
 versions = [ "branch=master" ]

@@ -6,3 +6,7 @@ version = "*"
 package = "github.com/buckaroo-pm/facebook-zstd"
 version = "*"
 
+[[dependency]]
+package = "github.com/buckaroo-pm/jedisct1-libsodium"
+version = "*"
+
